@@ -1,0 +1,9 @@
+@mixin medidas($argumento1,$argumento2){
+    width : $argumento1;
+    height : $argumento2;
+}
+
+@mixin centrar(){
+    justify-content: center;
+    align-items: center;
+}
