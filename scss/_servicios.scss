@@ -1,0 +1,30 @@
+.servicios-fondo {
+  background-color: #ececec;
+}
+.card {
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  margin: 10px 0 10px;
+}
+.card-text {
+  font-family: map-get($fuentes, "parrafo");
+  font-size: 20px;
+}
+.serv-btn {
+  background-color: #ececec;
+  transition: 1s;
+  font-family: map-get($fuentes, "parrafo");
+  font-size: 20px;
+}
+.serv-btn:hover {
+  background: $color-nav;
+  color: #fff;
+}
+.serv-titulo {
+  font-family: map-get($fuentes, "titulo");
+  text-align: center;
+  padding: 20px 0 40px;
+}
+.laser {
+  width: 286px;
+  height: 262px;
+}

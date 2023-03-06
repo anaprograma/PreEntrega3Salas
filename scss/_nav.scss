@@ -1,5 +1,7 @@
 .navbar {
   background-color: $color-nav;
+  position: relative;
+  z-index: 10;
 }
 .navbar-brand {
   padding-right: 15rem;
