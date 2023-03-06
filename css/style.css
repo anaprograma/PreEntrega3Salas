@@ -241,4 +241,37 @@
   height: 262px;
 }
 
+.galeria-fondo {
+  background-color: #ececec;
+}
+
+.galeria-container {
+  width: 900px;
+}
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.galeria-titulo {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0 5px;
+}
+
+.galeria-parrafo {
+  font-family: "Roboto";
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
