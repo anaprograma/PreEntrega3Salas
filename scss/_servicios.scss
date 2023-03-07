@@ -3,7 +3,6 @@
 }
 .card {
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
-  margin: 10px 0 10px;
 }
 .card-text {
   font-family: map-get($fuentes, "parrafo");
@@ -27,4 +26,35 @@
 .laser {
   width: 286px;
   height: 262px;
+}
+.servicios-card {
+  display: flex;
+  @include centrar;
+  padding: 0%;
+}
+.img-fixed {
+  color: #304740;
+  text-decoration: none;
+  font-family: map-get($fuentes, "titulo");
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+}
+a i {
+  color: #5edbb4;
+}
+.img-fixed {
+  position: fixed;
+  top: 50%;
+  left: 90%;
+  translate: (-50%, -50%);
+
+  z-index: 20;
+}
+@media (max-width: 800px) {
+  .img-fixed {
+    top: 50%;
+    left: 80%;
+    translate: (-50%, -50%);
+  }
 }
