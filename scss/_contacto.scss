@@ -90,11 +90,16 @@
   }
   .contacto-texto {
     position: absolute;
-    top: 50%;
+    top: 45%;
     text-align: center;
   }
-  .row {
+  .contacto-row {
     max-width: 420px;
     width: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .contacto-texto p {
+    font-size: 1.5rem;
   }
 }

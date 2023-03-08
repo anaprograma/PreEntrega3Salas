@@ -1,34 +1,31 @@
-
-.container-foot{
-    background-color: $color-nav;
+.container-foot {
+  background-color: $color-nav;
 }
 
-
-.foot-iconos img{
-    @include medidas(3rem, auto);
-    margin-right: 5rem;
-    margin-left: 5rem;
+.foot-iconos img {
+  @include medidas(3rem, auto);
+  margin-right: 5rem;
+  margin-left: 5rem;
 }
-.foot-fuente{
-    font-family: map-get($fuentes,"parrafo");
-    font-size: 1.5rem;
-    color: white;
+.foot-fuente {
+  font-family: map-get($fuentes, "parrafo");
+  font-size: 1.5rem;
+  color: white;
 }
-.foot-div{
-    @include centrar;
-}
-
-@media(max-width:850px){
-    .foot-fuente{
-        font-size: 1rem;
-    }
+.foot-div {
+  @include centrar;
 }
 
+@media (max-width: 850px) {
+  .foot-fuente {
+    font-size: 1rem;
+  }
+}
 
-@media(max-width:650px){
-    .foot-iconos img{
-        @include medidas(2rem, auto);
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
-    }
+@media (max-width: 650px) {
+  .foot-iconos img {
+    @include medidas(2rem, auto);
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
 }

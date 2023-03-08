@@ -2,15 +2,21 @@
   background-color: #ececec;
 }
 .galeria-container {
-  width: 900px;
+  width: 75vw;
+  max-width: 900px;
+  min-width: 280px;
 }
+
 .c-item {
-  height: 480px;
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 280px;
+  margin: auto;
+  filter: brightness(0.8);
 }
 .c-img {
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.6);
+  width: 100%;
+  height: auto;
 }
 .galeria-titulo {
   font-family: map-get($fuentes, "titulo");
@@ -24,4 +30,12 @@
   font-size: 25px;
   text-align: center;
   padding-bottom: 10px;
+}
+@media (max-width: 400px) {
+  .galeria-titulo {
+    font-size: 25px;
+  }
+  .galeria-parrafo {
+    font-size: 20px;
+  }
 }
