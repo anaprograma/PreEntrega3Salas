@@ -244,6 +244,8 @@
 
 .serv-titulo {
   font-family: "Roboto";
+  font-style: italic;
+  font-size: 40px;
   text-align: center;
   padding: 20px 0 40px;
 }
@@ -286,32 +288,28 @@ a i {
     font-size: 20px;
   }
 }
-@media (max-width: 800px) {
-  .img-fixed {
-    top: 50%;
-    left: 80%;
-    translate: -50%, -50%;
-  }
-}
-@media (max-width: 400px) {
-  .img-fixed {
-    left: 70%;
-  }
-}
 .galeria-fondo {
   background-color: #ececec;
 }
-
-.galeria-container {
-  width: 75vw;
-  max-width: 900px;
-  min-width: 280px;
+.galeria-fondo .galeria-container {
+  width: 60vw;
+}
+.galeria-fondo .galeria-container .galeria-titulo {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0 5px;
+}
+.galeria-fondo .galeria-container .galeria-parrafo {
+  font-family: "Roboto";
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .c-item {
-  width: 75vw;
-  max-width: 1000px;
-  min-width: 280px;
+  width: 60vw;
   margin: auto;
   filter: brightness(0.8);
 }
@@ -321,28 +319,79 @@ a i {
   height: auto;
 }
 
-.galeria-titulo {
+@media (max-width: 500px) {
+  .galeria-fondo .galeria-container .galeria-titulo {
+    font-size: 25px;
+  }
+  .galeria-fondo .galeria-container .galeria-parrafo {
+    font-size: 20px;
+  }
+}
+.bg-general {
+  background-color: #ececec;
+}
+
+.index-titulo {
   font-family: "Roboto";
   font-style: italic;
   font-size: 40px;
   text-align: center;
-  padding: 20px 0 5px;
+  padding-top: 20px;
 }
 
-.galeria-parrafo {
+.index-parrafo {
+  font-family: "Roboto";
+  font-size: 25px;
+  text-align: center;
+}
+
+.index--img {
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .index-titulo {
+    font-size: 25px;
+  }
+  .index-parrafo {
+    font-size: 20px;
+  }
+}
+.gb-general {
+  background-color: #ececec;
+}
+
+.nosotros-titulo {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nosotros-parrafo .nosotros-parrafo-subtitulo {
   font-family: "Roboto";
   font-size: 25px;
   text-align: center;
   padding-bottom: 10px;
+  padding-top: 20px;
+}
+.nosotros-parrafo .nosotros-parrafo-parrafo {
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  color: black;
 }
 
-@media (max-width: 400px) {
-  .galeria-titulo {
-    font-size: 25px;
-  }
-  .galeria-parrafo {
-    font-size: 20px;
-  }
+.nosotros-img {
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+}
+
+.nosotros-parrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

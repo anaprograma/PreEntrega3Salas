@@ -1,16 +1,26 @@
+// anidacion
 .galeria-fondo {
-  background-color: #ececec;
-}
-.galeria-container {
-  width: 75vw;
-  max-width: 900px;
-  min-width: 280px;
+  background-color: $bg-color;
+  .galeria-container {
+    width: 60vw;
+
+    .galeria-titulo {
+      font-family: map-get($fuentes, "titulo");
+      font-style: italic;
+      font-size: 40px;
+      text-align: center;
+      padding: 20px 0 5px;
+    }
+    .galeria-parrafo {
+      @include subtitulo;
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .c-item {
-  width: 75vw;
-  max-width: 1000px;
-  min-width: 280px;
+  width: 60vw;
+
   margin: auto;
   filter: brightness(0.8);
 }
@@ -18,24 +28,16 @@
   width: 100%;
   height: auto;
 }
-.galeria-titulo {
-  font-family: map-get($fuentes, "titulo");
-  font-style: italic;
-  font-size: 40px;
-  text-align: center;
-  padding: 20px 0 5px;
-}
-.galeria-parrafo {
-  font-family: map-get($fuentes, "titulo");
-  font-size: 25px;
-  text-align: center;
-  padding-bottom: 10px;
-}
-@media (max-width: 400px) {
-  .galeria-titulo {
-    font-size: 25px;
-  }
-  .galeria-parrafo {
-    font-size: 20px;
+
+@media (max-width: 500px) {
+  .galeria-fondo {
+    .galeria-container {
+      .galeria-titulo {
+        font-size: 25px;
+      }
+      .galeria-parrafo {
+        font-size: 20px;
+      }
+    }
   }
 }

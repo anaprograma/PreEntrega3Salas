@@ -1,0 +1,31 @@
+.gb-general {
+  background-color: $bg-color;
+}
+.nosotros-titulo {
+  @include titulo;
+  padding-top: 20px;
+}
+.nosotros-parrafo {
+  .nosotros-parrafo-subtitulo {
+    @include subtitulo;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .nosotros-parrafo-parrafo {
+    font-family: map-get($fuentes, "parrafo");
+    font-size: 20px;
+    color: black;
+  }
+}
+
+.nosotros-img {
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  // padding: 0;
+  border-radius: 10%;
+  // flex-wrap: nowrap;
+}
+.nosotros-parrafo {
+  display: flex;
+  flex-direction: column;
+  @include centrar;
+}

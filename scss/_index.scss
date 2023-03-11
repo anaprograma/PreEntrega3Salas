@@ -1,0 +1,21 @@
+.bg-general {
+  background-color: $bg-color;
+}
+.index-titulo {
+  @include titulo;
+  padding-top: 20px;
+}
+.index-parrafo {
+  @include subtitulo;
+}
+.index--img {
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+  .index-titulo {
+    font-size: 25px;
+  }
+  .index-parrafo {
+    font-size: 20px;
+  }
+}

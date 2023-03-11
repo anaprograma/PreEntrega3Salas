@@ -1,5 +1,5 @@
 .servicios-fondo {
-  background-color: #ececec;
+  background-color: $bg-color;
 }
 .card {
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
@@ -9,7 +9,7 @@
   font-size: 20px;
 }
 .serv-btn {
-  background-color: #ececec;
+  background-color: $bg-color;
   transition: 1s;
   font-family: map-get($fuentes, "parrafo");
   font-size: 20px;
@@ -19,8 +19,7 @@
   color: #fff;
 }
 .serv-titulo {
-  font-family: map-get($fuentes, "titulo");
-  text-align: center;
+  @include titulo;
   padding: 20px 0 40px;
 }
 .laser {
@@ -54,17 +53,5 @@ a i {
 @media (max-width: 1150px) {
   .img-fixed {
     font-size: 20px;
-  }
-}
-@media (max-width: 800px) {
-  .img-fixed {
-    top: 50%;
-    left: 80%;
-    translate: (-50%, -50%);
-  }
-}
-@media (max-width: 400px) {
-  .img-fixed {
-    left: 70%;
   }
 }
