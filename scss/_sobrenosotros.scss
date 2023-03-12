@@ -5,6 +5,7 @@
   @include titulo;
   padding-top: 20px;
 }
+// nesting
 .nosotros-parrafo {
   .nosotros-parrafo-subtitulo {
     @include subtitulo;
