@@ -310,15 +310,8 @@ a i {
   padding-bottom: 10px;
 }
 
-.c-item {
-  width: 60vw;
-  margin: auto;
-  filter: brightness(0.8);
-}
-
-.c-img {
-  width: 100%;
-  height: auto;
+.carousel-item {
+  filter: brightness(0.7);
 }
 
 @media (max-width: 500px) {
@@ -331,6 +324,13 @@ a i {
 }
 .bg-general {
   background-color: #ececec;
+}
+
+.index-container-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .index-titulo {
@@ -348,6 +348,8 @@ a i {
 }
 
 .index--img {
+  width: 700px;
+  height: auto;
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
