@@ -15,7 +15,7 @@
 }
 .index--img {
   @include medidas(700px, auto);
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: $sombra-gral;
 }
 @media (max-width: 600px) {
   .index-titulo {

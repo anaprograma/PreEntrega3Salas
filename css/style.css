@@ -125,7 +125,7 @@
 
 .contacto-texto {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -133,6 +133,10 @@
 .contacto-texto p {
   font-size: 2rem;
   font-family: "Roboto";
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
 }
 
 .contacto-input {
@@ -152,6 +156,8 @@
   flex-direction: column;
   position: relative;
   padding: 0 10px 0 10px;
+  font-family: "Roboto";
+  color: black;
 }
 
 .input {
@@ -162,7 +168,8 @@
   border-bottom: 1px solid #49a98b;
   outline: none;
   margin-bottom: 20px;
-  color: #40414a;
+  color: #323236;
+  font-family: "Roboto Condensed";
 }
 
 .input-box .input-field label {
@@ -259,17 +266,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0%;
+  padding-bottom: 20px;
 }
 
 a i {
-  color: #5edbb4;
+  color: black;
   font-size: 30px;
 }
 
 .img-fixed {
   position: fixed;
-  top: 70%;
+  top: 80%;
   left: 95%;
   translate: -50%, -50%;
   z-index: 20;
@@ -387,6 +394,10 @@ a i {
   font-family: "Roboto Condensed";
   font-size: 20px;
   color: black;
+}
+
+.nosotros-container-img {
+  padding-bottom: 20px;
 }
 
 .nosotros-img {

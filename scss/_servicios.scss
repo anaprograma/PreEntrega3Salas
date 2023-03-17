@@ -2,7 +2,7 @@
   background-color: $bg-color;
 }
 .card {
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: $sombra-gral;
 }
 .card-text {
   font-family: map-get($fuentes, "parrafo");
@@ -29,19 +29,18 @@
 .servicios-card {
   display: flex;
   @include centrar;
-  padding: 0%;
+  padding-bottom: 20px;
 }
 
 a i {
-  color: #5edbb4;
+  color: black;
   font-size: 30px;
 }
 .img-fixed {
   position: fixed;
-  top: 70%;
+  top: 80%;
   left: 95%;
   translate: (-50%, -50%);
-
   z-index: 20;
 }
 @media (max-width: 1150px) {

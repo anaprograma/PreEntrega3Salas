@@ -19,17 +19,18 @@
   width: 56rem;
   height: 34rem;
   background: #fff;
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: $sombra-gral;
 }
 .contacto-texto {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .contacto-texto p {
   font-size: 2rem;
   font-family: map-get($fuentes, "titulo");
+  @include titulo;
 }
 .contacto-input {
   display: flex;
@@ -45,6 +46,8 @@
   flex-direction: column;
   position: relative;
   padding: 0 10px 0 10px;
+  font-family: map-get($fuentes, "titulo");
+  color: black;
 }
 .input {
   height: 45px;
@@ -54,7 +57,8 @@
   border-bottom: 1px solid $color-nav;
   outline: none;
   margin-bottom: 20px;
-  color: #40414a;
+  color: #323236;
+  font-family: map-get($fuentes, "parrafo");
 }
 .input-box .input-field label {
   position: absolute;

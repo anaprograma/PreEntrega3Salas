@@ -5,10 +5,7 @@
     width: 60vw;
 
     .galeria-titulo {
-      font-family: map-get($fuentes, "titulo");
-      font-style: italic;
-      font-size: 40px;
-      text-align: center;
+      @include titulo;
       padding: 20px 0 5px;
     }
     .galeria-parrafo {
