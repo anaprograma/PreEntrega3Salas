@@ -65,11 +65,15 @@
   background-color: #49a98b;
 }
 
-.foot-iconos img {
-  width: 3rem;
-  height: auto;
+.iconos {
+  font-size: 3.5rem;
+  color: white;
   margin-right: 5rem;
   margin-left: 5rem;
+}
+
+.iconos:hover {
+  color: rgb(54, 53, 53);
 }
 
 .foot-fuente {
@@ -89,9 +93,8 @@
   }
 }
 @media (max-width: 650px) {
-  .foot-iconos img {
-    width: 2rem;
-    height: auto;
+  .iconos {
+    font-size: 2.3rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
   }
@@ -269,7 +272,7 @@
   padding-bottom: 20px;
 }
 
-a i {
+.fixed {
   color: black;
   font-size: 30px;
 }
@@ -323,7 +326,7 @@ a i {
 
 @media (max-width: 500px) {
   .galeria-fondo .galeria-container {
-    width: 90vw;
+    width: 95vw;
   }
   .galeria-fondo .galeria-container .galeria-titulo {
     font-size: 25px;
